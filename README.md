@@ -169,12 +169,107 @@ const { name, age } = person;
 console.log(name); // Output: Alice
 ```
 
-### 5. React Basics
+### 5. Spread Operator
 
-- **Components:** Reusable pieces of UI.
-- **Props:** Passing data between components.
-- **State:** Managing dynamic content in a component.
-- **Hooks (e.g., useState, useEffect):** Handling side effects and state in functional components.
+The spread operator (`...`) allows you to expand elements of an array or object.
+
+```js
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5];
+console.log(arr2); // Output: [1, 2, 3, 4, 5]
+```
+
+### 6. Array Methods (Explained for Beginners)
+
+Arrays in JavaScript store multiple values. Here are some useful array methods:
+
+- **map()** - Creates a new array by modifying each item in the original array.
+
+  ```js
+  const numbers = [1, 2, 3];
+  const doubled = numbers.map((num) => num * 2);
+  console.log(doubled); // Output: [2, 4, 6]
+  ```
+
+- **filter()** - Creates a new array with items that match a condition.
+
+  ```js
+  const scores = [45, 80, 90, 30];
+  const passed = scores.filter((score) => score >= 50);
+  console.log(passed); // Output: [80, 90]
+  ```
+
+- **reduce()** - Reduces an array to a single value.
+
+  ```js
+  const nums = [1, 2, 3, 4];
+  const sum = nums.reduce((total, num) => total + num, 0);
+  console.log(sum); // Output: 10
+  ```
+
+- **forEach()** - Loops through each item in an array.
+
+  ```js
+  const colors = ["Red", "Green", "Blue"];
+  colors.forEach((color) => console.log(color));
+  ```
+
+- **find()** - Returns the first element that matches a condition.
+
+  ```js
+  const users = [
+    { id: 1, name: "Alice" },
+    { id: 2, name: "Bob" },
+  ];
+  const user = users.find((user) => user.id === 1);
+  console.log(user); // Output: { id: 1, name: "Alice" }
+  ```
+
+---
+
+## Map (Array Function) Explained
+
+The `.map()` function is an array method in JavaScript that creates a new array by applying a function to each element of the original array.
+
+### Example:
+
+```js
+const numbers = [1, 2, 3];
+const doubled = numbers.map((num) => num * 2);
+console.log(doubled); // Output: [2, 4, 6]
+```
+
+### Explanation:
+
+1. **Declaring an Array:**
+
+   ```js
+   const numbers = [1, 2, 3];
+   ```
+
+   - Defines an array `numbers` with three elements `[1, 2, 3]`.
+
+2. **Using the `.map()` Method:**
+
+   ```js
+   const doubled = numbers.map((num) => num * 2);
+   ```
+
+   - `.map()` loops through each element in `numbers`.
+   - The function `(num) => num * 2` takes each element and multiplies it by 2.
+   - Returns a **new** array `[2, 4, 6]`.
+
+3. **Logging the Output:**
+   ```js
+   console.log(doubled);
+   ```
+   - Prints `[2, 4, 6]` to the console.
+
+### Summary:
+
+- `.map()` is used to modify or transform an array.
+- It **does not** change the original array.
+- Returns a **new** array with modified values.
 
 ---
 
