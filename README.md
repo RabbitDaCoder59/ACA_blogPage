@@ -27,8 +27,8 @@ Ensure you have the following installed:
 1. **Clone the Repository**
 
 ```bash
-git clone git@github.com:RabbitDaCoder59/ACA_blogPage.git
-cd react-blog-app
+git clone https://github.com/RabbitDaCoder59/ACA_blogPage.git
+cd ACA_blogPage
 ```
 
 2. **Install Dependencies**
